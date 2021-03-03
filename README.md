@@ -1,41 +1,18 @@
 # EXEMPLO _1
 Linguagem de Programação
-Exemplo_1
-#include <stdio.h>
+Calcule Tensão e corrente
 
+Entre com o valor da fonte 
+Entre com o valor do R1
+Entre com o valor do R2
+Calcule o valor de Req= R1+R2
+Se o 
+valor de Req for diferente de 0:
+Req = 0 "Erro de Calculo"
+se sim, calcule o valor da corrente I: E/Req
 
-int main(void) {
-
-
-  //Declarações de variaveis
-float e_E1, e_R1, e_R2;
-float s_I, s_VR1, s_VR2;
-
-//entrada velocidade inicial
-printf("Valor da fonte:");
-scanf ("%f",&e_E1);
-
-//entrada do tempo
-printf("Valor de R1:");
-scanf ("%f",&e_R1);
-
-//entrada do valor da acelaração
-printf("Valor de R2:");
-scanf ("%f",& e_R2);
-
-//atribuição: vf= v0+a.t
-
-s_I = e_E1 / (e_R1 + e_R2);
- 
- if (s_I == 0)
- {
-   printf("Erro de Calculo:");
- }
-
-else {
- 
-printf("s_I: %f [A]\n",
-s_I);
-}
-  return 0;
-}
+Calcule o valor de Vr1= I*R1
+Calcule o valor de Vr2 I*R2
+Mostre o valor da I
+Mostre o Valor de Vr1
+Mostre  o valor de Vr2
