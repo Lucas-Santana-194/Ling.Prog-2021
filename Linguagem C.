@@ -1,30 +1,33 @@
 #include <stdio.h>
 
-
 int main(void) {
+
+  int Req;
 
 
   //Declarações de variaveis
 float e_E1, e_R1, e_R2;
 float s_I, s_VR1, s_VR2;
 
-//entrada velocidade inicial
+//entrada do valor
 printf("Valor da fonte:");
 scanf ("%f",&e_E1);
 
-//entrada do tempo
+//entrada do valor
 printf("Valor de R1:");
 scanf ("%f",&e_R1);
 
-//entrada do valor da acelaração
+//entrada do valor 
 printf("Valor de R2:");
 scanf ("%f",& e_R2);
 
-//atribuição: vf= v0+a.t
-
+//atribuição: 
 s_I = e_E1 / (e_R1 + e_R2);
+s_VR1 = s_I*e_R1 ;
+s_VR2 = s_I*e_R2 ;
+Req = e_R1 + e_R2;
  
- if (s_I == 0)
+ if (Req == 0)
  {
    printf("Erro de Calculo:");
  }
@@ -33,6 +36,13 @@ else {
  
 printf("s_I: %f [A]\n",
 s_I);
+
+printf("s_VR1: %f [V]\n",
+s_VR1);
+
+printf("s_VR2: %f [V]\n",
+s_VR2);
+
 }
   return 0;
 }
