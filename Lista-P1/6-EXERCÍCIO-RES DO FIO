@@ -1,0 +1,107 @@
+#include <stdio.h>
+
+#define PRATA (0.00000159)
+#define COBRE (0.00000172)
+#define OURO (0.00000244)
+#define ALUMINIO (0.00000292)
+#define TUNGSTENIO (0.0000056)
+#define T (20)
+#define DOIS (2)
+#define UM (1)
+#define QUATRO (4)
+#define PI (3,14)
+
+
+
+int main(void) {
+
+//Declarações de variaveis
+float  e_Dia, e_Compr, e_P, e_Temp;
+float  s_Res,RESISTENCIA, AREA,RAIO;
+float P0; //Resistividade do Material 
+
+//entrada do valor
+printf("Inserir Valor do diametro:");
+scanf ("%f",&e_Dia);
+
+//entrada do valor
+printf("Inserir Valor do comprimento em cm:");
+scanf ("%f",&e_Compr);
+
+//entrada do valor
+printf("Inserir Material do fio:");
+scanf ("%f",&e_P);
+
+//entrada do valor 
+printf("Inserir temperatura de uso:");
+scanf ("%f",&e_Temp);
+
+
+//atribuição: 
+
+
+
+AREA= ((PI*e_Dia)/QUATRO);
+
+ 
+ 
+ if (e_P == PRATA)
+ 
+ {
+   s_Res= e_P*((UM+T)*(e_Temp-T));
+   
+   s_Res= (((e_P*e_Compr)/AREA));
+
+ 
+   
+ printf("s_Res:  %f [Ohms]\n",s_Res);
+ 
+ }
+
+
+else  if ( e_P == COBRE)
+  
+{
+  s_Res= e_P*((UM+T)*(e_Temp-T));
+   
+   RESISTENCIA= (((s_Res*e_Compr)/AREA));
+   
+ printf("RESISTENCIA: %f [Ohms]\n",
+ RESISTENCIA);
+}
+
+
+else  if ( e_P == OURO)
+  
+{
+  s_Res= e_P*((UM+T)*(e_Temp-T));
+   
+   RESISTENCIA= (((s_Res*e_Compr)/AREA));
+   
+ printf("RESISTENCIA: %f [Ohms]\n",
+ RESISTENCIA);
+}
+
+else  if ( e_P == ALUMINIO)
+  
+{
+  s_Res= e_P*((UM+T)*(e_Temp-T));
+   
+   RESISTENCIA= (((s_Res*e_Compr)/AREA));
+   
+ printf("RESISTENCIA: %f [Ohms]\n",
+ RESISTENCIA);
+}
+
+else  if ( e_P == TUNGSTENIO)
+  
+{
+  s_Res= e_P*((UM+T)*(e_Temp-T));
+   
+   RESISTENCIA= (((s_Res*e_Compr)/AREA));
+   
+ printf("RESISTENCIA: %f [Ohms]\n",
+ RESISTENCIA);
+}
+  return 0;
+}
