@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main(void) {
+
+
+
+  //Declarações de variaveis
+float e_S; // Sexo
+float e_Alt; //Altura
+float ResF; //Peso Ideal Feminino
+float ResM; //Peso Ideal Masculino
+
+//entrada do valor
+printf("Iserir o ser Sexo:\n 0 para Feminino. \n 1 para Masculino.\n");
+
+scanf ("%f",&e_S);
+ 
+
+printf("Inserir altura:\n");
+scanf ("%f",&e_Alt);
+
+//atribuição e Resultados: 
+
+
+    if ( e_S == 0)
+{
+
+ResF= ((62.1 * e_Alt) -44.7);
+
+printf("Peso Ideal Feminino: %f [kg]\n",
+ResF );
+}
+
+else  if ( e_S == 1)
+ 
+ {
+ ResM = ((72.7 *e_Alt)-58);
+ 
+ printf("Peso Ideal Masculino: %f [kg]\n",ResM );
+
+ }
+
+
+
+
+  return 0;
+}
+
