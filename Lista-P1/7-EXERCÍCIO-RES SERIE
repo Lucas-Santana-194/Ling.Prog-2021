@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main(void) {
+
+ 
+
+
+  //Declarações de variaveis
+float e_R1, e_R2, e_R3, e_R4;
+float s_Req;
+
+//entrada do valor
+printf("Valor de R1:");
+scanf ("%f",&e_R1);
+
+//entrada do valor 
+printf("Valor de R2:");
+scanf ("%f",& e_R2);
+
+//entrada do valor 
+printf("Valor de R3:");
+scanf ("%f",& e_R3);
+
+//entrada do valor 
+printf("Valor de R4:");
+scanf ("%f",& e_R4);
+
+
+
+//atribuição: 
+
+s_Req = e_R1+e_R2+e_R3+e_R4;
+ 
+ if (s_Req == 0)
+ 
+ {
+   printf("Erro de Calculo:");
+ }
+
+else {
+
+
+printf("Req: %f [Ohms]\n",
+s_Req);
+
+}
+  return 0;
+}
