@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <unistd.h>
+int main(void) { 
+  
+int e_seta_ligado,Pisca_Alerta,lam_esquerda,lam_direita;
+  
+while(1){
+printf("\nPara acionar o Pisca Alerta aperte 1\n :");
+scanf("%i",&Pisca_Alerta);
+
+printf("\nLIGAR A SETA [1-Esquerda; 2-Direita]\n :");
+scanf("%i",&e_seta_ligado);
+
+    if (e_seta_ligado == 1 )
+    {
+    lam_esquerda =  1;
+    printf("\n Lampada esquerda ligada\n ");
+    sleep (1);
+    lam_esquerda =  0;
+    printf("\n Lampada esquerda Desliga\n ");
+    }
+    if (e_seta_ligado == 2 )
+    {
+    lam_direita =  1;
+    printf("\n Lampada direita ligada\n ");
+     sleep (1);
+    lam_direita =  0;
+    printf("\n Lampada direita Desliga\n ");
+    }
+    
+    if (Pisca_Alerta == 1){
+    
+    lam_esquerda =  1;
+    printf("\n Lampada esquerda ligada\n ");
+    lam_direita =  1;
+    printf("\n Lampada direita ligada\n ");
+    sleep (1);
+    lam_esquerda =  0;
+    printf("\n Lampada esquerda Desligada\n ");
+    lam_direita =  0;
+    printf("\n Lampada direita Desligada\n ");
+    sleep (1);
+    }
+  }
+}
+    
+   
