@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+  int e_nro,centena,dezena,unidade,mult, v_aux;
+  v_aux= 100;
+  e_nro = 999;
+
+if( e_nro<=999)
+
+while (v_aux<=e_nro)
+{
+  unidade = v_aux%10;
+  dezena =((v_aux-unidade)/10)%10;
+  centena = ( v_aux - 10*dezena-unidade)/100;
+  mult = centena*dezena*unidade; 
+  printf("%i = %d%d%d = %d\n",v_aux,centena,dezena,unidade,mult);
+  v_aux++;
+}
+}
