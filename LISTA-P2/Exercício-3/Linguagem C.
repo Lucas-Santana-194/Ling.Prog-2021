@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main (void)
+{
+int i = 0;
+int valor[5];
+int aux;
+int ordenador = 1;
+        
+printf("\n Apresentar em Ordem Decrescente:\t\n");
+
+for ( i = 0; i < 5; i++ )
+{
+  printf("\n%d valor:", i+1);
+  scanf("%d", &valor[i]);
+}
+ printf("\nOrdem Decrescente:\n");
+ 
+  while ( ordenador <= 5 )
+  {
+   for ( i = 5-1; i > 0; i-- )
+  {  
+   if ( valor[i] > valor[i-1] )
+  {
+        aux = valor[i];
+        valor[i] = valor[i-1];
+        valor[i-1] = aux;
+  }
+  }
+    ordenador = ordenador + 1;
+  }
+
+   for ( i = 0; i < 5; i++ )
+   printf("\n valor[%d]: %d\n", i+1, valor[i]);
+ 
+ return 0;
+}
+
